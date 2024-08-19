@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Sarenas Alura</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    
+    <main class="presentacion">
+        <section class="logo_alura">
+            <img  class="imagen_logo" src="./assets/Vector.png" alt="logo_vector">
+        </section>
+        <section class="presentacion_contenido">
+            <h1 class="presentacion_contenido_titulo">Encriptador de texto <span class="Titulo_destaque">Santiago Arenas - Alura</span></h1> 
+            <textarea class="presentacion_contenido_texto" id="textoEntrada" rows="12" cols="50" maxlength="550" placeholder="Ingrese texto aquí"></textarea>
+
+            <h2 class="presentacion_enlaces_subtitulo">Solo letras minusculas y sin acentos</h2>
+            <div class="presentacion_enlaces">
+                <a class="presentacion_enlaces_link" onclick="demoDisplayEncriptar()"> Encriptar</a>
+                <a class="presentacion_enlaces_link" onclick="demoDisplayDesencriptar()"> Desencriptar</a>
+            </div>
+        </section>
+        <section id="cabinaTexto" class="cabina_texto">
+            <img  id="myP1" class="cabina_texto_imagen" src="./assets/Muñeco.png" alt="Santiago_presentacion">
+            <p id="myP2" class="cabina_texto_inicio">Ningun mensaje fue encontrado</p>
+            <p id="myP3" class="cabina_texto_indicador">Ingrese el texto que desea encriptar o desencriptar</p>
+            <p id="textoEncriptado" class="cabina_texto_encriptado" >Este es el texto que aparece Santiago.</p>
+            <a id="botonCopiar" class="cabina_texto_boton_copiar" onclick="copyText()">Copiar</a>
+            
+        
+        </section>
+        
+        
+    </main>
+    <footer class="footer">
+        <p>Developed by Santiago Arenas, Electronic Engineer & Software/Hardware Developer.</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

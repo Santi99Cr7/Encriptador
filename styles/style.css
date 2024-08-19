@@ -1,0 +1,262 @@
+  /* puedo llamar 
+varias fuentes con un solo import-- todo desde::after
+google fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --color-primario:rgb(53, 211, 216) ;
+  --color-dos: #F3F5FC;
+  --color-tres:#0A3871;
+  --fuente-montserrat:"Montserrat", sans-serif;
+  --fuente-Krona: "Krona One", sans-serif;
+  --fuente-inter:"Inter",sans-serif;
+}
+
+
+*{
+  padding: 1px;   /* distancia contenido y sus bordes*/
+  margin: 1px;
+
+}
+
+body {
+    background-color: var(--color-dos);
+    color: var(--color-tres) ;
+    /* height: 10vh;    */
+    box-sizing: border-box;
+  }
+  
+
+  .logo_alura{
+    position: relative; /* Asegura que el contenedor de la imagen tenga una posición relativa */
+    height: 600px; /* Ajusta según sea necesario */
+    width: 20px; /* Ajusta el ancho si es necesario */
+  }
+  .imagen_logo{
+    position: absolute;
+    top: 0; /* Posiciona la imagen en la parte superior */
+    left: 0; /* Alinea la imagen con el borde izquierdo */
+    width: 100%; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  
+  .presentacion{
+    display: flex;   /* organizacion flexbox*/
+    align-items: center;
+    padding: 5% 5%;
+    justify-content: space-between;    /* Justificacion separacion de flexbox*/
+    gap: 40px;
+
+  }
+  .presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* espacion entre flexbox*/
+  }
+  .presentacion_contenido_titulo{
+    font-size: 2.25rem;  /* tamaño de ña fuente*/
+    font-family: var(--fuente-inter);
+
+  }
+  .Titulo_destaque{
+    color: var(--color-primario);
+  }
+  .presentacion_contenido_texto{
+    font-size: 1.5rem;  /* tamaño de ña fuente*/
+    font-family: var(--fuente-montserrat);
+    border: none; /* Sin borde */
+    background-color: transparent; /* Sin fondo */
+    line-height: 1.5; /* Espaciado entre líneas */
+    outline: none; /* Sin borde de enfoque */
+    resize: none; /* Deshabilita el redimensionamiento */
+    /*overflow-y: auto; /* Añade scroll si el contenido excede */
+    /*word-wrap: break-word; /* Ajusta el texto automáticamente */
+    
+    
+  }
+  .presentacion_enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+  }
+  .presentacion_enlaces_subtitulo{
+    font-family: var(--fuente-inter);
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+  .presentacion_enlaces_link{
+    width: 20rem;
+    border: 2px solid var(--color-primario);
+    /* background-color: rgba(0, 255, 255, 0.603); */
+    text-align: center;
+    padding: 21.5px 0px;
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-tres);
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-top: auto; /* Empuja el botón hacia abajo */
+
+  }
+  .presentacion_enlaces_link:hover{  /* cambia color de botones*/
+    background-color: rgb(189, 228, 230);
+  }
+
+/* Desde aca va toda la edicion*/
+  .cabina_texto{
+    outline: none; /* Sin borde de enfoque */
+    resize: none; /* Deshabilita el redimensionamiento */
+    padding: 1rem;
+    width: 25rem;     /* serian 400 pixeles*/
+    height: 40rem;     /* serian 400 pixeles*/
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* espacion entre flexbox*/
+    border: 2px solid var(--color-primario);
+    background-color: white;
+    border-radius: 24px;
+ }
+ .cabina_texto_imagen{
+    box-sizing: border-box;
+    width: 100%;
+  /*padding: 8%;*/
+  }
+ .cabina_texto_inicio{
+   /*padding: 8%;*/
+   font-size: 1.5rem;  /* tamaño de ña fuente*/
+   font-family: var(--fuente-inter);
+   text-align: center;
+   font-weight: 500;
+ 
+ }
+ .cabina_texto_indicador{
+   /*padding: 8%;*/
+   font-size: 1rem;  /* tamaño de ña fuente*/
+   font-family: var(--fuente-inter);
+   text-align: center;
+   padding: 10%;
+
+ }
+ .cabina_texto_encriptado{
+   padding: 8%;
+   flex-direction: column;
+   font-size: 1.5rem;  /* tamaño de ña fuente*/
+   font-family: var(--fuente-inter);
+   text-align: left;
+   font-weight: 400;
+   justify-content: space-between; /* Distribuye el texto y el botón */
+   overflow-y: auto; /* Añade scroll si el contenido excede */
+   /*word-wrap: break-word; /* Ajusta el texto automáticamente */
+ }
+ .cabina_texto_boton_copiar{
+  width: 90%;
+  border: 2px solid var(--color-primario);
+  /* background-color: rgba(0, 255, 255, 0.603); */
+  text-align: center;
+  padding: 21.5px 0px;
+  border-radius: 24px;
+  font-family: var(--fuente-inter);
+  font-size:1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-tres);
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  margin-top: auto; /* Empuja el botón hacia abajo */
+}
+
+
+
+/*Hasta aca va la edicion */ 
+
+
+
+
+  .footer{
+    background-color: var(--color-primario);
+    padding: 1.5rem;
+    color: var(--color-dos);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400; /*Grosor de letra o fuente */
+  }
+  @media  (max-width: 1024px){
+    .logo_alura{
+      position: relative; /* Asegura que el contenedor de la imagen tenga una posición relativa */
+      height: 20px; /* Ajusta según sea necesario */
+      width: 20px; /* Ajusta el ancho si es necesario */
+    }
+    .presentacion{
+      flex-direction: column;
+    }
+    .presentacion_contenido{
+      width: 90%;
+      height: auto;
+    }
+    .presentacion_contenido_texto{
+      height: auto;
+            
+    }
+    .header{       /*  No es necesario volver a llamar el flexbox si ya se llamo en el css principal */
+      padding: 10%;
+    }
+    .header_menu{
+      justify-content: center;
+    }
+    .cabina_texto{
+
+      padding: 1rem;
+      width: 90%;     /* serian 400 pixeles*/
+      height: auto;     /* serian 400 pixeles*/
+      gap: 1px;
+    }
+    .cabina_texto_imagen {
+      display: none;
+    }
+    .cabina_texto_inicio{
+      padding: 2%;
+          
+    }
+    .cabina_texto_indicador{
+      /*padding: 8%;*/
+      
+      padding: 2%;
+   
+    }
+    .cabina_texto_encriptado{
+      padding: 1%;
+      
+    }
+    .cabina_texto_boton_copiar{
+      width: 100%;
+      
+      /* background-color: rgba(0, 255, 255, 0.603); */
+      
+      gap: 20%;
+      margin-top: auto; /* Empuja el botón hacia abajo */
+    }
+  }
+  @media(max-width: 767px){
+    .presentacion_enlaces{
+      
+      flex-direction: column;
+      
+  
+    }
+  
+  }
+
+  /* units, medidas absolutas como accesibilidad, nada de pixeles
