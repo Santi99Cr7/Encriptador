@@ -110,6 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
       let valor = this.value;
   
       // Reemplaza cualquier carácter que no sea letra
-      this.value = valor.replace(/[^a-z ]/g, '');
+      this.value = valor.replace(/[^a-zñ.,:;?!¡¿- ]/g, '');
     });
   });
